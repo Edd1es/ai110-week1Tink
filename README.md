@@ -111,3 +111,7 @@ If you finish early or want an extra challenge, try one of these:
 - Stay curious. The unpredictability is intentional and part of the experience.
 
 When you finish, Playlist Chaos will feel more predictable, and you will have taken your first steps into AI-assisted debugging.
+
+## Week 1 TF Summary
+
+The core concept in this activity was understanding how small logic mistakes in AI-generated code can significantly affect app behavior, especially around string normalization, containment checks, and edge case handling. Students are most likely to struggle with reading conditional logic carefully, such as reversing `query in value`, and with recognizing when statistics are calculated using the wrong dataset. AI was helpful for identifying suspicious sections of code and explaining what functions were intended to do, but it can be misleading by suggesting overly broad fixes or failing to align precisely with the app’s specification. For example, the playlist statistics looked correct at a glance but were computing total songs and average energy incorrectly using only the Hype playlist. The Lucky Pick feature also revealed how missing edge case handling (like empty lists) can cause runtime errors. To guide a student without giving the answer, I would ask them to write down one concrete expected behavior (e.g., “searching ‘ac’ should find ‘AC/DC’”) and trace the variables step-by-step through the function to see where the logic breaks. This approach encourages precise reasoning and verification rather than blind trust in AI suggestions.
